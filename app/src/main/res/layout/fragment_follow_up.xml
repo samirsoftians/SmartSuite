@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollRegistrationCenter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textClientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="@string/client_name"
+            android:textColor="@color/primary_text"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/linearDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textCurrentDate"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/primary_dark"
+                android:drawableLeft="@drawable/layer_shape_date"
+                android:gravity="center_vertical"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/textCurrentTime"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="0.5"
+                android:background="@color/primary_dark"
+                android:drawableLeft="@drawable/layer_shape_time"
+                android:gravity="center_vertical"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioGroup
+                android:id="@+id/rgBookType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textColor="@color/primary_text"
+                    android:text="@string/rb_in"/>
+
+                <RadioButton
+                    android:id="@+id/rbOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_weight="1"
+                    android:checked="false"
+
+                    android:textColor="@color/primary_text"
+
+                    android:text="@string/rb_out"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSelectFollowUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Follow Up Type*"
+            android:textColor="@color/primary"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnerFollowUpType"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/spinner_background"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_drop"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textSelectStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Status*"
+            android:textColor="@color/primary"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/spinner_background"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_drop"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textSelectSpokenTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Spoken To*"
+            android:textColor="@color/primary"/>
+
+        <LinearLayout
+            android:id="@+id/linearAddContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8">
+
+                <Spinner
+                    android:id="@+id/spinnerSpokenTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:background="@drawable/spinner_background"
+                    android:spinnerMode="dropdown"></Spinner>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_drop"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textAddContact"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:drawableRight="@drawable/layer_shape_add_contact"
+                android:src="@drawable/layer_shape_add_contact"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtComments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:hint="@string/comments"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:background="@drawable/shape_login_btn"
+            android:text="@string/next"
+            android:textColor="@color/primary_light"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</ScrollView>

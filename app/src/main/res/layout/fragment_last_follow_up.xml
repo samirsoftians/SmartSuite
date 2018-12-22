@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:paddingTop="20sp">
+
+    <!--  <TextView
+          android:id="@+id/textHeader"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:gravity="left"
+          android:text="Follow Ups"
+          android:textColor="@color/primary_dark"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          />
+  -->
+    <TextView
+        android:id="@+id/textCompanyNameFollowup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:ems="15"
+        android:textColor="@color/card4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view_last_follow_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

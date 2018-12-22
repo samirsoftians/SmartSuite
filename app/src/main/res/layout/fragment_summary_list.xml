@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:paddingTop="10sp">
+
+    <TextView
+        android:id="@+id/textCustomerNameDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text=" Agility Logistic Pvt. Ltd. (Goa)"
+        android:textColor="@color/card4"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view_customer_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>
+

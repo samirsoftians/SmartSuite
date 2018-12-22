@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollRegistrationCenter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:background="@color/pure_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutFollowUp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textClientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:text="@string/client_name"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/linearDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textCurrentDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/primary_dark"
+                    android:drawableLeft="@drawable/layer_shape_date"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="13sp"
+                />
+
+                <TextView
+                    android:id="@+id/textCurrentTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/primary_dark"
+                    android:drawableLeft="@drawable/layer_shape_time"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="13sp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioGroup
+                    android:id="@+id/rgBookType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/rb_in"
+                        android:textColor="@color/primary_text"
+                        android:theme="@style/Theme.App.Base"/>
+
+                    <RadioButton
+                        android:id="@+id/rbOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/rb_out"
+                        android:textColor="@color/primary_text"
+
+                        android:theme="@style/Theme.App.Base"/>
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSelectFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Follow Up Type*"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerFollowUpType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/Theme.App.Base"
+                />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_drop"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textSelectStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Status*"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/Theme.App.Base"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_drop"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textSelectSpokenTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Spoken To*"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/linearAddContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <Spinner
+                        android:id="@+id/spinnerSpokenTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/spinner_background"
+                        android:popupBackground="@color/white"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/Theme.App.Base"></Spinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_drop"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textAddContact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:drawableRight="@drawable/layer_shape_add_contact"
+                    android:foreground="@drawable/ripple_button_circle"
+                    android:src="@drawable/layer_shape_add_contact"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtComments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/comments"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:theme="@style/Theme.App.Base"/>
+
+            <TextView
+                android:id="@+id/textAddNewFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Add Next Follow Up"
+                android:textColor="@color/card4"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutNextFollowUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textNextFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Add Next Follow Up"
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearDate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textNextDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/primary_dark"
+                    android:drawableLeft="@drawable/layer_shape_date"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="13sp"
+                />
+
+                <TextView
+                    android:id="@+id/textNextTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/primary_dark"
+                    android:drawableLeft="@drawable/layer_shape_time"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textSelectFollowUpNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Next Follow Up Type*"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerFollowUpTypeNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/Theme.App.Base"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_drop"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textSelectAssignTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Assigned To*"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeAssignTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerAssignTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/Theme.App.Base"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_drop"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <CheckBox
+                    android:id="@+id/chkPaymentFollowUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Payment"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:theme="@style/Theme.App.Base"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:padding="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/edtAmountExpected"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.4"
+                        android:gravity="center_vertical"
+                        android:hint="Amount Exptd"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/hint"
+                        android:textSize="18dp"
+                        android:theme="@style/Theme.App.Base"/>
+
+                    <TextView
+                        android:id="@+id/textPaymentDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="0.4"
+                        android:background="@color/primary_dark"
+                        android:gravity="center"
+                        android:hint="Amnt Expectd On"
+                        android:textColor="@color/pure_white"
+                        android:textColorHint="@color/pure_white"/>
+
+                    <ImageView
+                        android:id="@+id/imgAmtExpctOn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:foreground="@drawable/ripple_button_circle"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/layer_shape_date"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edtPreparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/preparation"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:theme="@style/Theme.App.Base"/>
+
+            <EditText
+                android:id="@+id/edtRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/remarks"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:theme="@style/Theme.App.Base"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:orientation="horizontal"
+                android:padding="5sp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textDocPath"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:hint="Upload Document"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="View File"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                />
+
+                <ImageView
+                    android:id="@+id/imgAttachFile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2"
+                    android:foreground="@drawable/ripple_button_circle"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/layer_shape_attachment"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_background"
+                android:orientation="horizontal"
+                android:padding="5sp"
+                android:weightSum="1">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/autoSpecialEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/SpecialEmail"
+                    android:inputType="textAutoComplete"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint"
+                    android:textSize="18dp"
+                    android:theme="@style/Theme.App.Base">
+                </MultiAutoCompleteTextView>
+
+                <ImageView
+                    android:id="@+id/floatingActionButtonAddMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/layer_shape_email"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layer_list_take_followup"
+                android:elevation="8dp"
+                android:foreground="@drawable/ripple_button"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

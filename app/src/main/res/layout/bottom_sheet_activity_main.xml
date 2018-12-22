@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:behavior_peekHeight="160dp"
+>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pure_white"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/bottomSheet1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pure_white"
+            android:visibility="gone"
+        >
+
+
+            <TextView
+                android:id="@+id/textSomething"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/ic_message_alert"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Follow Up"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/textSearchCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/places_ic_search"
+                android:gravity="center"
+
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Search"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pure_white"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/textAddFollowUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/ic_message_alert"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Follow Up"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/textAddCustomer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/ic_account_plus_grey"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Add Customer"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

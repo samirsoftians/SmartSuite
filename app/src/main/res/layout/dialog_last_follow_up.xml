@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollRegistrationCenter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.1"
+            android:background="@color/primary_dark"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="10sp"
+                android:text="Last Follow Up"
+                android:textColor="@color/primary_light"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <!--
+
+                        <TextView
+                            android:id="@+id/txtCompanyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingTop="10sp"
+                            android:text="Company Name"
+                            android:textColor="@color/primary_light"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+            -->
+
+            <TextView
+                android:id="@+id/txtAppointmentDateDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="10sp"
+                android:text="27-02-1966"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtContactPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCompanyName"
+                android:text="Contact Person Name"
+                android:textColor="@color/primary_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/txtAppointmentTimeDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="10sp"
+                android:paddingTop="28sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.5"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:paddingTop="8sp"
+
+                android:textColor="@color/primary_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/txtNextFollowUpTypeApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/txtPreparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txtPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txtExpectedOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/txtRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:paddingBottom="20sp"
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:paddingTop="8sp"
+                android:text="Last Follow-Up Details:"
+                android:textColor="@color/primary_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/txtFollowUpTypePrev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/txtStatusPrev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txtCommentsPrev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:gravity="left"
+
+
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txtFollowUpDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textColor="@color/primary_dark"
+                android:textSize="15sp"/>
+
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:background="@color/primary_dark"
+                android:gravity="center"
+                android:text="Close"
+                android:textColor="@color/primary_light"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <group android:checkableBehavior="single"
+    >
+
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@drawable/ic_event"
+            android:title="Appointments"/>
+        <item
+            android:id="@+id/nav_add_customer"
+            android:icon="@drawable/ic_account_plus"
+            android:title="Customers"
+            android:visible="false"/>
+
+
+        <item
+            android:id="@+id/nav_summary"
+            android:icon="@drawable/ic_play_arrow"
+            android:title="Summary"/>
+
+        <item
+            android:id="@+id/nav_aging_report"
+            android:icon="@drawable/ic_insert_chart"
+            android:title="Aging Report"
+            android:visible="false"/>
+
+
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_sync"
+            android:title="Sync"
+            android:visible="false"
+        />
+
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/ic_upload"
+            android:title="Upload"
+            android:visible="false"
+        />
+
+
+        <item
+            android:id="@+id/nav_send_location"
+            android:icon="@drawable/ic_place"
+            android:title="Send Locations"/>
+
+        <item
+            android:id="@+id/nav_checkin"
+            android:icon="@drawable/ic_checkbox_marked_circle"
+            android:title="Check In"/>
+        <item
+            android:id="@+id/nav_checkout"
+            android:icon="@drawable/ic_checkbox_marked_circle"
+            android:title="Check Out"/>
+
+    </group>
+</menu>

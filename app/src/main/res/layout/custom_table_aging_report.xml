@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:gravity="top|center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+
+        <ScrollView
+            android:id="@+id/vertical_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            >
+
+                <TextView
+                    android:id="@+id/textHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Aging Report"
+                    android:textColor="@color/card4"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                />
+
+
+                <TableLayout
+                    android:id="@+id/tableLayoutLedger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textDuration"
+                    android:background="@drawable/shape_table_border"
+
+                >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/table_header"
+                        android:padding="3sp">
+
+
+                        <TextView
+                            android:id="@+id/textSrNo"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Sr. No"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+
+                        />
+
+                        <TextView
+                            android:id="@+id/textCompany"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:paddingRight="5dp"
+                            android:text="Company"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textGroup"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Group"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textContact"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Contact"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textMobileNo"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Mobile No."
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textLastTrDate"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Last Tr.Date"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textTrId"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Tr.ID"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textCurrentBal"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Current Balance"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textGreaterThanThirty"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text=">=30"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                        <TextView
+                            android:id="@+id/textUptoSixty"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="31-60"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                        <TextView
+                            android:id="@+id/textUptoNinety"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="61-90"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                        <TextView
+                            android:id="@+id/textGreaterThanNinetyOne"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text=">91"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+
+                        </TextView>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

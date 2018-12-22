@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scrollRegistrationCenter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/done_transword"/>
+
+
+        <LinearLayout
+            android:id="@+id/layoutMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageLogo"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:paddingTop="55sp">
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Username"
+                android:inputType="text"
+                android:textColor="@color/primary_dark"
+                android:textColorHint="@color/hint"
+                android:theme="@style/Theme.App.Base"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/primary_dark"
+                android:textColorHint="@color/hint"
+                android:theme="@style/Theme.App.Base"
+
+            />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50sp"
+                android:background="@drawable/layer_list_take_followup"
+                android:foreground="@drawable/ripple_button"
+                android:gravity="center"
+                android:text="@string/login_button"
+                android:textColor="@color/primary_light"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

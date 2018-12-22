@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/primary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/imageViewAddPic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+
+        app:siBorderColor="@color/white"
+        app:siBorderWidth="4dp"
+    />
+
+    <TextView
+        android:id="@+id/textUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:paddingTop="3dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+    />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android.studio@android.com"
+        android:visibility="invisible"/>
+
+</LinearLayout>
+
+
+    <!--
+
+        <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:background="@color/primary"
+
+                  android:orientation="vertical"
+                  android:paddingTop="5dp"
+                  android:paddingLeft="@dimen/activity_horizontal_margin"
+                  android:paddingRight="@dimen/activity_horizontal_margin"
+
+
+                  android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/imageViewAddPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:siBorderWidth="6dp"
+            app:siBorderColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="25sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+      &lt;!&ndash;  <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="android.studio@android.com"/>&ndash;&gt;
+
+    </LinearLayout>
+    -->

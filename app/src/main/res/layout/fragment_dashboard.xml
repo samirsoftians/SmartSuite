@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:orientation="vertical"
+    android:paddingTop="30sp">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoSearchCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:completionThreshold="1"
+        android:dropDownHeight="200sp"
+        android:ems="100"
+        android:gravity="left"
+        android:hint="Auto Search Field"
+        android:inputType="textAutoComplete"
+        android:textColor="@color/primary_dark"
+        android:textColorHint="@color/hint"
+        android:theme="@style/Theme.App.Base" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSync"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="10"
+        android:secondaryProgress="50"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view_follower"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
+

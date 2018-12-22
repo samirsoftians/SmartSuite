@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="45dp"
+    android:orientation="vertical"
+    android:padding="10sp"
+>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:scrollbars="horizontal">
+
+
+        <ScrollView
+            android:id="@+id/vertical_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+            >
+
+                <TextView
+                    android:id="@+id/textHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="Invoices"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                />
+
+                <TextView
+                    android:id="@+id/textCustomerNameTableIn"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textHeader"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/card4"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TableLayout
+                    android:id="@+id/tableLayoutInvoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textCustomerNameTableIn"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_table_border"
+
+                >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:background="@color/table_header"
+                        android:padding="3sp"
+                    >
+
+                        <TextView
+                            android:id="@+id/textSrNoIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="#"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+
+
+                        />
+
+                        <TextView
+                            android:id="@+id/textInvoiceRefNoIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Inv No."
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textInvoiceDateIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Inv Dt"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textTotalIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Total"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textGrandTotalIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Gr Total"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textCurrentIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Currency"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textGroupIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Group"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textStatusIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Status"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textCompanyNameIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Company Name"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textSignIn"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Sign"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

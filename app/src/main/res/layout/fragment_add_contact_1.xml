@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollRegistrationCenter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+
+                <Spinner
+                    android:id="@+id/spinnerInitials"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:background="@drawable/spinner_background"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_drop" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgAddContactFromAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/layer_shape_address_book" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/firstname"
+            android:inputType="textPersonName"
+            android:maxLength="25"
+            android:paddingTop="20sp"
+            android:singleLine="true"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base"
+            />
+
+        <EditText
+            android:id="@+id/edtMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/middlename"
+            android:inputType="textPersonName"
+            android:maxLength="25"
+            android:paddingTop="20sp"
+            android:singleLine="true"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base"/>
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/lastname"
+            android:inputType="text"
+            android:maxLength="25"
+            android:paddingTop="20sp"
+            android:singleLine="true"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base"/>
+
+        <EditText
+            android:id="@+id/edtDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/desg"
+            android:inputType="text"
+            android:maxLength="25"
+            android:paddingTop="20sp"
+            android:singleLine="true"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base"/>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:paddingTop="20sp"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base" />
+
+        <EditText
+            android:id="@+id/edtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:maxLength="25"
+            android:paddingTop="20sp"
+            android:singleLine="true"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base"/>
+
+        <EditText
+            android:id="@+id/edtZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zipcode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingTop="20sp"
+            android:textColor="@color/primary_dark"
+            android:textColorHint="@color/hint"
+            android:theme="@style/Theme.App.Base" />
+
+        <Button
+
+            android:id="@+id/btnNextContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtZipCode"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/shape_login_btn"
+            android:text="@string/next"
+            android:textColor="@color/primary_light"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>

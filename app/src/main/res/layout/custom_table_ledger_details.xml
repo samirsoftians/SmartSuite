@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:gravity="top|center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+
+        <ScrollView
+            android:id="@+id/vertical_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            >
+
+                <TextView
+                    android:id="@+id/textHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Ledger  Details"
+                    android:textColor="@color/card4"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                />
+
+                <TextView
+                    android:id="@+id/textCompanyNameLedger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textHeader"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/card4"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textCompanyNameLedger"
+                    android:layout_marginTop="15sp"
+                    android:paddingBottom="10sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                />
+
+                <TableLayout
+                    android:id="@+id/tableLayoutLedger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textDuration"
+                    android:background="@drawable/shape_table_border"
+
+                >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/table_header"
+                        android:padding="3sp">
+
+
+                        <TextView
+                            android:id="@+id/textSrNo"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="#"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+
+                        />
+
+                        <TextView
+                            android:id="@+id/textTrDate"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:paddingRight="5dp"
+                            android:text="Tr. Date"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textTrId"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Tr. ID"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textDebit"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Debit"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textCredit"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Credit"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textBalance"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Balance(o/s) 	"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textDesc"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Desc."
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textDescId"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Desc.ID"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textSign"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Sign"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

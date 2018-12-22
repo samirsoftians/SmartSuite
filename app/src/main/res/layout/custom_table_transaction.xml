@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:padding="10sp"
+>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:scrollbars="horizontal">
+
+
+        <ScrollView
+            android:id="@+id/vertical_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+            >
+
+                <TextView
+                    android:id="@+id/textCustomerNameTable"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/card4"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+                <TableLayout
+                    android:id="@+id/tableLayoutTransaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textCustomerNameTable"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_table_border"
+                >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:background="@color/table_header"
+                        android:padding="3sp"
+                    >
+
+                        <TextView
+                            android:id="@+id/textDateTr"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+
+
+                        />
+
+                        <TextView
+                            android:id="@+id/textIdTr"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="ID"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textCreditTr"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Credit"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textDebitTr"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Debit"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textBalanceTr"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:text="Balance"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="serif">
+                        </TextView>
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
